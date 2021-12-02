@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>The Code Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <h1>THE CODE REVIEW</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Signup for our newsletter</h2><br>
+            <p>Get the latest news on how your code is doing right in your inbox</p><br>
+        </section>
+    <div class="border1"></div>
+    <div class="border2"></div><br>
+      
+        <form class="contact-info">
+            <fieldset>
+                <legend><b><h2>Contact Information</h2></b></legend><br>
+                <label for="name">Full Name</label><br>
+                <input type="text" id=name name="user_name" placeholder="Required"><br>
+
+                <label for="email">Email Address</label><br>
+                <input type="email" id="mail" name="user_email" placeholder="Required"><br>
+
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" name="user_phone"><br>
+
+                <label for="address">Street Address</label><br>
+                <input type="text" id="address" name="user_address"><br>
+
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="user_city"><br>
+                
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                <option value="state" disabled="disabled" selected="selected" class="choose-state">Choose a State</option></select>
+
+                <label for="zip">Zip Code</label><br>
+                <input type="text" id="zip" name="user_zip"><br>
+            </fieldset>
+        <div class="border2"></div><br>
+
+        <div class="newsletter">
+            <fieldset>
+                <legend><b>Newsletter</b></legend><br>
+                <p>Select the newsletters you would like to receive</p><br>
+            <input type="checkbox" id="html-news" name="news" value="news-html" checked="checked">
+            <label for="html-news">HTML News</label><br>
+
+              <input type="checkbox" id="css-news" value="css-news">
+                 <label for="css-news">CSS News</label><br>
+
+                <input type="checkbox" id="javascript-news" name="news" value="news-javascript">
+                 <label for="javascript-news">Javascript News</label><br>
+        
+                 <br><p>Newsletter Format</p><br>
+                <input type="radio" id="html" name="radio" value="html" checked="checked">
+                <label for="html">HTML</label><br/>
+        
+                <input type="radio" name="radio" id="plain-text" value="plain-text"/>
+                <label for="text">Plain Text</label><br/>
+
+                <br><p>Other topics you'd like to hear about</p><br>
+                <br><textarea id="other-topics" name="other"></textarea>
+            </fieldset>
+            <input type="submit" id="button" value="Sign Up"><br>
+        </div>        
+     </form>
+    </main>
+    
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+  </body>
+  </html>
