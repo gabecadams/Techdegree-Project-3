@@ -8,6 +8,12 @@ body {
     font-size: 16px;
     }
 
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        border: 0;
+    }
+
     main {
         margin: 0 auto;
     }
@@ -69,16 +75,15 @@ body {
     select {
         width: 100%;
         background-color: #e8eeef;
-        padding: 18px 20px;
+        padding: 18px 8px;
         margin: 8px 0;
         border:none;
         border-radius: 5px;
     }
 
-  option.choose-state {
-        font-style: italic;
-        color: lightgray;
+    select:invalid {
         text-align: left;
+        color: lightgray;
     }
 
     #zip {
@@ -116,11 +121,14 @@ input[type="submit"] {
 
 select:focus,
 input:focus {
-
 }
 
 textarea:focus {
 
+}
+
+:focus:hover {
+    background-color: white;
 }
 
 .newsletter {
@@ -135,19 +143,38 @@ footer {
 
 @media screen and (min-width:768px) {
   
-
-.contact-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select[name="user_state"] {
+        width: 75%;
 }
 
-.contact-info input, select {
-    width: 70%;
-    margin: 8px 8px;
-}
+input[type="zip"] {
+        width: 25%;
+        }
+
 
 .contact-info label {
     width: 25%;
     margin: 20px 0;
+}
+
+.top,
+.top-zip {
+padding-top: 15px;
+display: flex;
+}
+
+.top label,
+.top-zip label {
+flex-basis: 25%;
+}
+
+.top input{
+flex-basis: 75%;
+}
+
+.top-zip input {
+    max-width: 25%;
 }

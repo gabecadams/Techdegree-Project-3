@@ -20,31 +20,48 @@
     <div class="border1"></div>
     <div class="border2"></div><br>
       
+    <div class="container">
+
         <form class="contact-info">
             <fieldset>
                 <legend><b><h2>Contact Information</h2></b></legend><br>
+                <div class="top">
                 <label for="name">Full Name</label><br>
                 <input type="text" id=name name="user_name" placeholder="Required"><br>
+                </div>
 
+                <div class="top">
                 <label for="email">Email Address</label><br>
                 <input type="email" id="mail" name="user_email" placeholder="Required"><br>
+                </div>
 
+                <div class="top">
                 <label for="phone">Phone number</label><br>
                 <input type="tel" id="phone" name="user_phone"><br>
+                </div>
 
+                <div class="top">
                 <label for="address">Street Address</label><br>
                 <input type="text" id="address" name="user_address"><br>
+                </div>
 
+                <div class="top">
                 <label for="city">City</label><br>
                 <input type="text" id="city" name="user_city"><br>
+                </div>
                 
+                <div class="top">
                 <label for="state">State</label>
-                <select id="state" name="user_state">
-                <option value="state" disabled="disabled" selected="selected" class="choose-state">Choose a State</option></select>
+                <select id="state" name="user_state" required>
+                <option value="" disabled="disabled" selected="selected" class="choose-state">Choose a State</option></select>
+                </div>
 
+                <div class="top-zip">
                 <label for="zip">Zip Code</label><br>
                 <input type="text" id="zip" name="user_zip"><br>
             </fieldset>
+        </div>
+
         <div class="border2"></div><br>
 
         <div class="newsletter">
@@ -73,6 +90,7 @@
             <input type="submit" id="button" value="Sign Up"><br>
         </div>        
      </form>
+     </div>
     </main>
     
     <footer>
