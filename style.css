@@ -106,6 +106,10 @@
     border: none;
   }
   
+  input:focus, select:focus, textarea:focus {
+    outline: 4px solid  lightblue;
+  }
+
   input[type="submit"] {
     width: 93%;
     font-size: 20px;
@@ -125,13 +129,6 @@
   #plain-text {
     margin: 4px;
     margin-bottom: 12px;
-  }
-  
-  select:focus,
-  input:focus {
-  }
-  
-  textarea:focus {
   }
   
   :focus:hover {
